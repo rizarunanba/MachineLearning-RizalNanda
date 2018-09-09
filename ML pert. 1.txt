@@ -1,0 +1,23 @@
+recognition: face, object, speech, gait, handwritten
+detection: object, fraud
+recommendation: youtube
+prediction: saham prediction
+
+Learning: supervised(target) and unsupervised
+
+Linear regression
+f: R -> R     f(x;w) = w0 + w1x
+		     = a + b(x)
+		     = intercept + koefisien(x)
+		ex   = 2 + 5(x)
+
+f: R -> Rd     f(x;w) = w0 + w1x1 + .... + wdxd
+
+Loss function = simpangan error, semakin kecil semakin baik
+
+process:
+var(x) =  sigma(n, i=1) (xi - x)^2/n-1
+cov(x,y) = sigma(n, i=1) (xi - x)(yi - y)/n-1
+
+w1 = cov/var
+w0 = meany-cov*meanx
